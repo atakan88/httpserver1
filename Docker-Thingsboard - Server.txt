@@ -1,0 +1,33 @@
+1-Docker Engine kurulumunu gerçekleştirelim https://docs.docker.com/engine/install/ubuntu/
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+
+
+sh get-docker.sh
+
+ sudo usermod -aG docker $USER
+
+2-Verdiğim pull dosyasını çekelim.
+
+3-ThingsBoard kurulumunu gerçekleştirelim :
+2.2 SETUP klasöründeki docker dosyasının kurulu oldugu masaüstüne taşıaylım
+2.3 Docker konteynerlerinizi başlatmadan önce, veri depolama ve loglar için dizinler oluşturmak ve klasör yetkileri için için aşağıdaki komutları çalıştıralım
+mkdir -p ~/.mytb-data && sudo chown -R 799:799 ~/.mytb-data
+mkdir -p ~/.mytb-logs && sudo chown -R 799:799 ~/.mytb-logs
+2.4 docker konteynırımızı çalıştıralım
+docker compose up -d
+docker compose logs -f mytb (loglarına bakmak istiyorsak)
+
+3-ThingsBoard'a http://{kurulum yaptigimiz ip}:8080 url'si ile erişelim ve tenant olarak giriş yapalım (tenant@thingsboard.org - tenant)
+
+4-Devices kısmında yeni bir device oluşturup adını ("Device 1") yapın ve Bir device daha oluşturup adını "RCP Device 1" yapın(Gorsel anlatim: SETUP/SETUP-IMG/IMG-1 & IMG-2 & IMG-3)
+
+5-Profiles alt başlığı device profiles'a SETUP klasöründeki default.JSON u import edip eskisini silin ve default seçeneğini seçin(Gorsel anlatim: SETUP/IMG/IMG-4 & IMG-5 & IMG-6)
+
+6-Dashboard sekmesinde SETUP klasöründeki Makine_1_dashboard.JSON dosyasını(2. cihazı kurmak istiyorsanız Makine_2_dashboard.JSON dosyasını da) import edin(Gorsel anlatim: SETUP/IMG/IMG-7 & IMG-8)
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+1-Oracle VM VirtualBox indirelim https://www.virtualbox.org/wiki/Downloads
+
+2-SETUP isimli klasörde bulunan mini.iso dosyasının üzerinde UbuntuMini kurulumunu yapalım (no gui olduğu için rahat çalışmak adına kurulumun son kısmında SSH'ı işaretleyip kurmayı unutmayalım)
+
+3-Kurulum bittikten sonra Oracle VM VirtualBox açıp ayarlar kısmının Network sekmesinde Adapter 2 olark Host-only Adapter ekleyelim ve Storage sekmesinden mini.iso'yu kaldırıp cihazı boot edelim
+
+4-SSH bağlantısı için komut istemine ip a yazıp cihazın ip'sini kopyalayıp ana cihazda SSH üzerinden bağlanyıyı kuralım ssh kullanıcıadı@ipadresi
+
+4.1 ip adresi gözükmesi için /etc/netplan/01-netcfg.yaml kısmında kullandığımız ama olmayan portu dhcp4=true yapalım(Örn:Setup/IMG/IMG-0)
+4.2 SSH bağlantısı için ana makinede açtığımız powershell'de ssh (kullandığınız VM'in kullanıcı adı)@(kullandığınız VM'in ip adresi)
+
+
+
+

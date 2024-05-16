@@ -1,0 +1,13 @@
+1-Verdiğim pull dosyasını çekelim.
+
+2-Makine-1.py dosyasını MQTT broker için gerekli düzenlemeleri yapalım
+TOKEN_1 yazan kısımı "Device 1" in Access token'ini
+TOKEN_2 yazan kısıma "RPC Device 1" in Access Token'ini yapıştıralım ve kaydedelim
+
+3-Datayı gözlemek için küçük bir html site açalım bunun için ngnix indirip site1 adlı klasörün içindekileri site klasmrü / var / www dosya yoluna yapıştıralım
+
+4-Ana makinemizden sanal makinenin ip adresi ile html siteyi açabiliriz
+
+5-Ardından kodu sudo python3 Makine-1 şeklinde çalıştıralım
+
+6-http://{kurulum yaptigimiz ip}:8080 url'si ile eriştiğimiz ThingsBoard'da DashBoard paneli --> Makine-1 Dashboard kısmında veri akışını gözlemleyelim

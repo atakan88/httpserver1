@@ -1,0 +1,14 @@
+sudo apt update
+sudo pip install pip
+sudo pip3 install geocoder
+sudo pip install psutil
+sudo pip install paho-mqtt
+sudo pip3 install tb-mqtt-client
+
+after running the code 
+
+
+reboot
+
+
+sudo apt update && sudo pip install --upgrade pip && sudo pip3 install geocoder && sudo pip install psutil && sudo pip install paho-mqtt && sudo pip3 install tb-mqtt-client && pip install pymmh3

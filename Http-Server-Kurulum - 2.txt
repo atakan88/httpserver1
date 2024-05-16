@@ -1,0 +1,21 @@
+1-Verdiğim pull dosyasını çekelim.
+
+2-Makine-2.py dosyasını MQTT broker için gerekli düzenlemeleri yapalım
+TOKEN_1 yazan kısımı "Device 2" in Access token'ini
+TOKEN_2 yazan kısıma "RPC Device 2" in Access Token'ini yapıştıralım
+
+3-Bir python dosyası oluşturp düzenlediğimiz Makine-2.py dosyasındakileri içine kopyalayıp kaydedelim
+
+4-kodu sudo python3 (oluşturulan python dosyası) şeklinde çalıştıralım
+
+5-http://{kurulum yaptigimiz ip}:8080 url'si ile eriştiğimiz ThingsBoard'da DashBoard Makine-2 Dashboard kısmında veri akışını gözlemleyelim
+
+
+
+git clone github.comhttpserver.git
+
+
+site klasmrü / var / www 
+
+uyguma py 
+
